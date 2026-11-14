@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class desc_venta {//Descripcion de la venta
+public class desc_venta {
     private int id;
     private int ventaId;
     private int productoId;
@@ -15,17 +15,12 @@ public class desc_venta {//Descripcion de la venta
         this.subtotal = precioUnitario.multiply(BigDecimal.valueOf(cantidad));
     }
 
-    // Getters y Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public int getVentaId() { return ventaId; }
     public void setVentaId(int ventaId) { this.ventaId = ventaId; }
     public int getProductoId() { return productoId; }
-    public void setProductoId(int productoId) { this.productoId = productoId; }
     public int getCantidad() { return cantidad; }
-    public void setCantidad(int cantidad) { this.cantidad = cantidad; }
     public BigDecimal getPrecioUnitario() { return precioUnitario; }
-    public void setPrecioUnitario(BigDecimal precioUnitario) { this.precioUnitario = precioUnitario; }
     public BigDecimal getSubtotal() { return subtotal; }
-    public void setSubtotal(BigDecimal subtotal) { this.subtotal = subtotal; }
 }
